@@ -8,6 +8,8 @@
 Workaround to enable animating UIWebView height. If you try to animate UIWebView.frame via standart `[UIView animateWithDuration:animations]`, no animation will occur, webView's content will immediately jump to it's final frame.
 This library tries to fix this issue by animating webView content size via JavaScript, then changing webView.frame after JS animation finished.
 
+![example video](example.gif)
+
 ## Usage
 
     #import "UIWebView+GLKAnimateFrame.h"
